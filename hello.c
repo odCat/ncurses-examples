@@ -16,25 +16,26 @@ int main (void)
      */
     printw("Hello, World!\n");
 
+
     /*
      * It's supose to update the screen
      * but the program works without it
      */
     refresh();
 
+
     /*
      * Wait for a character to be typed
      */
     getch();
 
-    printw("Hello, World, Again!");
-    getch();
 
     /*
      * End the curses mode
      * Frees memory and returns to normal mode
      */
     endwin();
+
 
     return 0;
 }
