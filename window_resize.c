@@ -6,13 +6,12 @@ int main (void)
 
     initscr();
 
-    while (1)
+    /* Until the Esc key is pressed */
+    while ((rc = getch() ) != 27)
     {
-        rc = getch();
+        /* Check if the window was resized */
         if (rc == KEY_RESIZE)
             printw ("Window resized\n");
-        if (rc == 27)
-            break;
     }
 
     endwin();
