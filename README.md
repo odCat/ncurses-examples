@@ -1,2 +1,2 @@
 # ncurses-examples
-ncurses examples or tutorials
+ncurses examples and tutorials
